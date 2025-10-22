@@ -45,54 +45,6 @@ Wikipedia + Yahoo Finance → Airflow → Amazon S3 (Raw Data)
 
 ---
 
-## 🧩 Project Structure  
-
-```
-├── dags/                  # Airflow DAGs
-├── scripts/               # Python scripts for extraction & transformation
-├── requirements.txt       # Dependencies
-├── README.md              # Project documentation
-```
-
----
-
-## ⚙️ How It Works  
-
-1. Airflow triggers the DAG on schedule.  
-2. A Python script extracts the list of S&P 500 companies from Wikipedia.  
-3. Another script fetches stock price data via Yahoo Finance.  
-4. Data is saved directly to Amazon S3.  
-5. Airflow then triggers a load job that moves cleaned data from S3 into Snowflake.  
-
----
-
-## 🌐 Use Cases  
-
-- Building a **data pipeline portfolio project**  
-- Demonstrating **ETL and orchestration** concepts  
-- Practicing **Snowflake, S3, and Airflow integration**  
-- Serving as a foundation for **real-time stock data analytics**  
-
----
-
-## 📈 Future Improvements  
-
-- Add **data validation and quality checks**  
-- Integrate with **dbt for transformations**  
-- Visualize data using **Tableau** or **Power BI**  
-- Extend to other stock indices (e.g., NASDAQ 100)  
-
----
-
-## 🧠 Learning Outcomes  
-
-Through this project, you’ll gain hands-on experience with:  
-- Building and scheduling pipelines in Airflow  
-- Using AWS S3 and Snowflake for data storage and warehousing  
-- Automating ETL processes  
-- Handling real-world data sources programmatically  
-
----
 
 ## 🏷️ Tags  
 
